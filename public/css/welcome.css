@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+.welcome-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.content-wrapper {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 60px;
+}
+
+.kemenkeu-logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.kemenkeu-logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.kemenkeu-logo .logo-text {
+    color: #fff;
+    font-size: 8px;
+    line-height: 1.3;
+    font-weight: 600;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.main-title {
+    margin-top: 60px;
+}
+
+.main-title h1 {
+    font-size: 72px;
+    font-weight: 900;
+    color: #1a2a5e;
+    line-height: 1;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.main-title h1 .surabaya {
+    color: #c8a84e;
+    display: block;
+}
+
+.main-title .subtitle {
+    font-size: 14px;
+    color: #1a2a5e;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.motto-box {
+    background: linear-gradient(135deg, rgba(26,42,94,0.85), rgba(26,42,94,0.7));
+    backdrop-filter: blur(10px);
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 10px;
+    margin-top: 25px;
+    max-width: 350px;
+}
+
+.motto-box p {
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.motto-box .highlight {
+    color: #f0c040;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.start-btn-wrapper {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+.start-btn {
+    background: #1a1a3e;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 14px 60px;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.start-btn:hover {
+    background: #fff;
+    color: #1a1a3e;
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.values-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 30px;
+    padding: 20px 40px;
+    z-index: 3;
+}
+
+.value-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.value-item .icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: #c8a84e;
+}
+
+.value-item span {
+    font-size: 11px;
+    font-weight: 600;
+    color: #1a2a5e;
+}
